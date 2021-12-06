@@ -87,9 +87,12 @@ const deleteBookmark = function (id) {
   persistBookmarks();
 };
 
-const init = function(){
-localStorage.getItem('bookmarks')
-}
+const init = function () {
+  const storage = localStorage.getItem('bookmarks');
+  if (storage) state.bookmarks = JSON.parse(storage);
+};
+init();
+console.log(state.bookmarks);
 
 // loadSearchResults('pizza');
 export {
