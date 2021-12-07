@@ -9,9 +9,9 @@ import paginationView from './views/paginationView.js';
 import bookmarksView from './views/bookmarksView.js';
 import addRecipeView from './views/addRecipeView.js';
 import { MODAL_CLOSE_SEC } from './config.js';
-
+import { iconURL } from '../img/icons.svg';
 const recipeContainer = document.querySelector('.recipe');
-const iconURL = `./src/img/icons.svg`;
+// const iconURL = `../img/icons.svg`;
 
 // https://forkify-api.herokuapp.com/v2
 
